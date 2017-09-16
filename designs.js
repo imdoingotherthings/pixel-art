@@ -16,10 +16,10 @@ function makeGrid() {
   let height = h.value; // here we store the value of the element '#height'.
 
   // this loop creates the row of the grid.
-  for (let i = 0; i < width; i++) {
+  for (let i = 0; i < height; i++) {
     let r = tb.insertRow(i);
     // this loop creates the cell within the row of the grid.
-    for (let j = 0; j < height; j++) {
+    for (let j = 0; j < width; j++) {
       let cell = r.insertCell(j);
       // here we add event listeneres to toggle the color and change its value.
       cell.addEventListener('click', function () {
